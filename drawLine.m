@@ -12,5 +12,3 @@ y = [p(2) ; q(2)];
 handle = plot(x,y,myColor);
 set(handle,"LineWidth",3);
 endfunction
-
-
