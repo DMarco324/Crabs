@@ -8,14 +8,10 @@ function crabs ()
 [mapHeight , mapWidth] = drawMap ( "BGImage.png" );
 
 % Initialize captain location, heading and size
-<<<<<<< HEAD
+
 % =======
 xCapt = 1800;
 yCapt = 500;
-=======
-xCapt = 1200;
-yCapt = 900;
->>>>>>> 9fe499a1370ba0f113322840fcf0a7559051c7b7
 thetaCapt = -pi/2;
 sizeCapt = 50;
 
