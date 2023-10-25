@@ -6,9 +6,11 @@ crab = getCrab(sizeCrab);
 %rotate crab
 R = getRotation(thetaCrab);
 crabRotated = R*crab;
+
 %shift crab to new location
-S = getTranslation(xCrab,yCrab);
-crab = S*crabRotated;
+T = getTranslation(xCrab,yCrab);
+crab = T*crabRotated;
+
 %get crab points
 pt1=crab(:,1);
 pt2=crab(:,2);

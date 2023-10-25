@@ -8,18 +8,26 @@ function crabs ()
 [mapHeight , mapWidth] = drawMap ( "BGImage.png" );
 
 % Initialize captain location, heading and size
-%xCapt = 1800;
-%yCapt = 600;
+<<<<<<< HEAD
 % =======
 xCapt = 1800;
 yCapt = 500;
+=======
+xCapt = 1200;
+yCapt = 900;
+>>>>>>> 9fe499a1370ba0f113322840fcf0a7559051c7b7
 thetaCapt = -pi/2;
 sizeCapt = 50;
 
 xCrab = 1000;
 yCrab = 600;
 thetaCrab = -pi/2;
-sizeCrab = 40;
+sizeCrab = 50;
+
+xsupCrab = 400;
+ysupCrab = 500;
+thetasupCrab= pi/-.5;
+sizesupCrab = 80;
 
 % Initialize crab location, heading and size
 
@@ -28,6 +36,8 @@ sizeCrab = 40;
 captainGraphics = drawCapt (xCapt , yCapt , thetaCapt , sizeCapt)
 
 crabGraphics = drawCrab (xCrab, yCrab, thetaCrab, sizeCrab)
+
+supercrabGraphics = drawsuperCrab (xsupCrab , ysupCrab , thetasupCrab , sizesupCrab)
 
 % input and output arguments.
 %*******************************************************
@@ -41,8 +51,7 @@ while ( cmd != "Q") % While not quit, read keyboard and respond
         
         for (i=1: length(captainGraphics) )
           set(captainGraphics(i), 'Visible', 'off' );
-        endfor
-        
+        endfor 
         % move capt
         [xCapt, yCapt, thetaCapt] = moveCapt(cmd, xCapt, yCapt, thetaCapt, mapWidth, mapHeight);
         
