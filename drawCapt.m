@@ -1,4 +1,4 @@
-function captainGraphics = drawCapt (xCapt , yCapt , thetaCapt , sizeCapt)
+function [captainGraphics, xSpear, ySpear] = drawCapt (xCapt , yCapt , thetaCapt , sizeCapt)
 % In the future, this function will draw the captain at the given
 % position (xCapt , yCapt) , with heading thetaCapt.
 % For now, it draws the captain at the (0, 0) with 0 heading.
@@ -43,4 +43,8 @@ captainGraphics(9) = drawLine(pt9 , pt10 , "k");
 captainGraphics(10) = drawLine(pt1 , pt11 , "k");
 captainGraphics(11) = drawLine(pt6 , pt12 , "k");
 captainGraphics(12) = drawLine(pt13 , pt14 , "k");
+
+xSpear= pt13(1);
+ySpear= pt13(2);
+
 endfunction
